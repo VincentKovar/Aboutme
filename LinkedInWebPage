@@ -1,0 +1,164 @@
+export default function VincentKovarLandingPage() {
+  const proofPoints = [
+    "$7.2M raise + NASDAQ IPO (Gaxos AI)",
+    "2.8M → 11.4M gamer growth in <12 months",
+    "Cha Dao scaled to national retail + Coca-Cola exit",
+    "168% ARR growth across D&D 5E launch",
+    "T-Mobile churn reduced 37% + onboarding costs cut by $10M"
+  ];
+
+  const roles = [
+    {
+      title: "Fractional / Full-Time CMO",
+      desc: "Go-to-market architecture, growth systems, and executive marketing leadership for startups, scale-ups, and transformation-stage companies."
+    },
+    {
+      title: "AI + GTM Systems Builder",
+      desc: "Agentic workflows, AI implementation, and operational design that turns strategy into scalable execution."
+    },
+    {
+      title: "Product Marketing Operator",
+      desc: "Narrative, monetization, positioning, and launch execution across SaaS, Web3, gaming, and enterprise ecosystems."
+    }
+  ];
+
+  const caseStudies = [
+    {
+      company: "Gaxos AI",
+      outcome: "Led marketing for $7.2M raise + first NFT gaming NASDAQ listing during crypto winter.",
+    },
+    {
+      company: "PlayOn / iGames",
+      outcome: "Scaled partner gaming communities from 2.8M to 11.4M through product + performance systems.",
+    },
+    {
+      company: "Cha Dao Tea",
+      outcome: "Built from startup to national retail distribution and Coca-Cola acquisition.",
+    },
+  ];
+
+  return (
+    <div className="min-h-screen bg-white text-slate-900 font-sans">
+      {/* Hero */}
+      <section className="bg-slate-950 text-white">
+        <div className="max-w-7xl mx-auto px-6 py-20 grid lg:grid-cols-2 gap-12 items-center">
+          <div>
+            <p className="uppercase tracking-[0.3em] text-cyan-400 text-sm mb-4">Build. Sell. Ship.</p>
+            <h1 className="text-5xl lg:text-7xl font-bold leading-tight mb-6">
+              GTM + AI Operator for Founders Who Need Growth, Not Guesswork.
+            </h1>
+            <p className="text-xl text-slate-300 mb-8 max-w-2xl">
+              Vincent Kovar helps founders, CEOs, and executive teams translate complex products into revenue through product marketing, AI systems, and growth execution.
+            </p>
+            <div className="flex flex-wrap gap-4">
+              <button className="bg-cyan-400 text-slate-950 px-6 py-3 rounded-2xl font-semibold shadow-lg hover:bg-cyan-300 transition">
+                Book Strategic Conversation
+              </button>
+              <button className="border border-slate-600 px-6 py-3 rounded-2xl font-semibold hover:border-cyan-400 transition">
+                View Executive Proof
+              </button>
+            </div>
+          </div>
+          <div className="bg-slate-900 border border-slate-800 rounded-3xl p-8 shadow-2xl">
+            <div className="space-y-4">
+              <h3 className="text-2xl font-semibold">Selected Outcomes</h3>
+              {proofPoints.map((point, i) => (
+                <div key={i} className="flex items-start gap-3 border-b border-slate-800 pb-3">
+                  <span className="text-cyan-400 font-bold">0{i + 1}</span>
+                  <p className="text-slate-300">{point}</p>
+                </div>
+              ))}
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Trust Bar */}
+      <section className="border-y bg-slate-50">
+        <div className="max-w-7xl mx-auto px-6 py-6 grid md:grid-cols-4 gap-4 text-center">
+          <div><span className="text-3xl font-bold">25+</span><p>Years building growth systems</p></div>
+          <div><span className="text-3xl font-bold">$125M+</span><p>Partnership ecosystem exposure</p></div>
+          <div><span className="text-3xl font-bold">11.4M</span><p>Community scale achieved</p></div>
+          <div><span className="text-3xl font-bold">Global</span><p>Web3, SaaS, Gaming, AI</p></div>
+        </div>
+      </section>
+
+      {/* What Vincent Does */}
+      <section className="max-w-7xl mx-auto px-6 py-20">
+        <div className="mb-12">
+          <p className="text-cyan-600 font-semibold uppercase tracking-wide">What I Do</p>
+          <h2 className="text-4xl font-bold mt-2">Executive Marketing Infrastructure for High-Stakes Growth</h2>
+        </div>
+        <div className="grid md:grid-cols-3 gap-8">
+          {roles.map((role, i) => (
+            <div key={i} className="bg-white border rounded-3xl p-8 shadow-sm hover:shadow-xl transition">
+              <h3 className="text-2xl font-semibold mb-4">{role.title}</h3>
+              <p className="text-slate-600 leading-relaxed">{role.desc}</p>
+            </div>
+          ))}
+        </div>
+      </section>
+
+      {/* Case Studies */}
+      <section className="bg-slate-100 py-20">
+        <div className="max-w-7xl mx-auto px-6">
+          <div className="mb-12">
+            <p className="text-cyan-600 font-semibold uppercase tracking-wide">Proof</p>
+            <h2 className="text-4xl font-bold mt-2">Career Highlights That Translate Into Hiring Confidence</h2>
+          </div>
+          <div className="grid lg:grid-cols-3 gap-8">
+            {caseStudies.map((study, i) => (
+              <div key={i} className="bg-white rounded-3xl p-8 shadow-md">
+                <p className="text-sm uppercase tracking-wider text-slate-500 mb-3">{study.company}</p>
+                <p className="text-lg font-medium leading-relaxed">{study.outcome}</p>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Founder Fit */}
+      <section className="max-w-7xl mx-auto px-6 py-20 grid lg:grid-cols-2 gap-12 items-center">
+        <div>
+          <h2 className="text-4xl font-bold mb-6">For founders who need:</h2>
+          <ul className="space-y-4 text-lg text-slate-700">
+            <li>• Category-defining product positioning</li>
+            <li>• Investor-grade narrative architecture</li>
+            <li>• AI-enabled growth systems</li>
+            <li>• GTM execution across product, partnerships, and scale</li>
+            <li>• Strategic operator leadership without empty theory</li>
+          </ul>
+        </div>
+        <div className="bg-slate-950 text-white rounded-3xl p-10">
+          <h3 className="text-3xl font-bold mb-4">Why this page exists</h3>
+          <p className="text-slate-300 text-lg leading-relaxed">
+            This is not a resume. It is a founder-facing landing page built to answer one question fast: Can Vincent build strategic clarity, market momentum, and operational growth where complexity currently slows scale?
+          </p>
+        </div>
+      </section>
+
+      {/* CTA */}
+      <section className="bg-cyan-400 py-20">
+        <div className="max-w-5xl mx-auto text-center px-6">
+          <h2 className="text-5xl font-bold text-slate-950 mb-6">
+            Ready to turn complexity into traction?
+          </h2>
+          <p className="text-xl text-slate-900 mb-8">
+            Ideal for founders, CEOs, boards, and executive recruiters seeking growth-stage marketing leadership.
+          </p>
+          <button className="bg-slate-950 text-white px-8 py-4 rounded-2xl font-semibold text-lg shadow-lg hover:bg-slate-800 transition">
+            Connect with Vincent
+          </button>
+        </div>
+      </section>
+
+      {/* Footer */}
+      <footer className="border-t py-8">
+        <div className="max-w-7xl mx-auto px-6 flex flex-col md:flex-row justify-between text-slate-600 gap-4">
+          <p>Vincent Kovar</p>
+          <p>Product Marketing • GTM • AI Systems • Executive Growth</p>
+        </div>
+      </footer>
+    </div>
+  );
+}
